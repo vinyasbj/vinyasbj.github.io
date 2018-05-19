@@ -1,3 +1,59 @@
+@import "compass/css3";
+
+$c1 : #674172;
+$c2 : #ffffff;
+*{ 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+html,
+body
+{
+    margin: 0;
+  background: $c1;
+}
+
+#particles-js{
+  height: 100%;
+  background:  #222;
+}
+canvas
+{
+    display: block;
+
+    vertical-align: bottom;
+}
+
+.aa_sec
+{
+    position: absolute;
+    z-index: 5;
+    top: 5%;
+    /*bottom: 50%;*/
+    right: 0;
+    left: 0;
+
+    margin: 0  auto;
+}
+.aa_txt
+{
+    font: 100 10vh/1 Roboto;
+
+    text-align: center;
+
+    color: $c1;
+}
+.aa_inner
+{
+    padding: 0 2rem;
+
+    text-transform: uppercase;
+
+    background: $c2;
+}
+
+
 @font-face {
     font-family: 'Graphik', Helvetica, sans-serif; 
     src: url('assets/Graphik-Regular.otf'); 
@@ -174,7 +230,7 @@ code {
   color: black;
 }
 
-.intro hr {
+.aa_sec hr {
   background-color: white;
 }
 
@@ -693,13 +749,13 @@ display: none;
     display: inline-block;
   }
 
-.intro,
+.aa_sec,
 .content-wrapper {
     padding-left: 2em;
     padding-right: 2em;
   }
 
-  .intro {
+  .aa_sec {
     padding-top: 1em !important;
   }
 
